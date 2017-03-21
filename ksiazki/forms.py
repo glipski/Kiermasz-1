@@ -10,7 +10,13 @@ class KsiazkiForm(ModelForm):
     class Meta:
         model = models.Ksiazki
         exclude = ('#','data')
-        widgets = {'opis': Textarea(attrs={'rows': 2, 'cols': 80})}
+        widgets = {'opis': Textarea(attrs={'rows': 2, 'cols': 80}),
+        'kontakt': Textarea(attrs={'rows': 1, 'cols': 50}),
+        'wydawnictwo': Textarea(attrs={'rows': 1, 'cols': 50}),
+        'autor': Textarea(attrs={'rows': 1, 'cols': 50}),
+        'przedmiot': Textarea(attrs={'rows': 1, 'cols': 50}),
+        'tytul': Textarea(attrs={'rows': 1, 'cols': 50}),
+        }
 
 
 """KsiazkiFormSet = inlineformset_factory
