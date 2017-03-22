@@ -27,6 +27,5 @@ class KsiazkiForm(ModelForm):
     validate_min=True,
     extra=2,
     fields=('tytul','autor')
-)
 
 """
